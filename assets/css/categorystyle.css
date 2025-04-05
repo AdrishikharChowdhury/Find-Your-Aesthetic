@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+p{
+    line-height: 1.6;
+}
+
+/* navbar start */
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #DB7F67;
+    z-index: 1000;
+}
+
+.navsearch{
+    display: flex;
+    align-content: center;
+}
+
+.navsearch:hover{
+    border: 4px #e15b39 solid;
+    border-radius: 5px ;
+}
+
+.textarea{
+    padding-left: 10px;
+    border: 2px black solid;
+    margin-left: -5px;
+    margin-right: -5px;
+    height: 35px;
+    width: 350px;
+}
+
+#searchicon{
+    margin-left: 3.6px;
+    border: 2px black solid;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    height: 38px;
+    width: 38px;
+    background-color: #c0401f;
+    color: white;
+    font-size: 1.3rem;
+}
+
+#drop{
+    background-color: aliceblue;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: 2px black solid;
+    padding-top: 6px;
+    padding-bottom: 7px;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    color: rgb(74, 71, 71);
+}
+
+#logo{
+    border-radius: 0.5rem;
+    background-image: url("https://cdn.glitch.global/76f033d1-d312-42a3-b754-23917fc7349d/DALLE2~1.JPG?v=1740896518966");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 40px;
+    border-radius: 50%;
+    background-position: 100%;
+}
+
+.navlinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.box{
+    padding: 10px 20px 10px 20px;
+    color: black;
+    font-size: 0.95rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+}
+
+.navcart{
+    margin-top: 0.3rem;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.box:hover{
+    transition: transform 0.3s;
+    transform: scale(1.1) translateY(0.2rem);
+    background-color: #e07055;
+}
+
+/* navbar end */
+
+/* hero section start */
+
+.hero-section{
+    margin-top: 100px;
+    height: 650px;
+    width: 100%;
+    background-image: url("https://cdn.glitch.global/76f033d1-d312-42a3-b754-23917fc7349d/Your%20paragraph%20text.png?v=1739812890506");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+}
+
+.headline{
+    background-color: rgba(0,0,0,0.4);
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem; 
+    color: #ffffff; 
+    margin-top: 20px;
+    width: 80%;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+marquee{
+    text-align: center;
+    width: 1000px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.explore {
+    display: flex;
+    justify-content: center;    /* Centers the button horizontally */
+    align-items: center;        /* Optional: centers vertically */
+    width: 100%;                /* Make sure the container spans full width */
+    position: absolute;         /* Ensures it's positioned over the hero image */
+    bottom: 150px;               /* Adjust this value to move it higher or lower */
+}
+
+#aesthetic {
+    padding: 15px 25px;
+    background-color: #aa1685;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#aesthetic:hover{
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.8);
+    transform: translateY(-5.5px);
+}
+
+main{
+    background-image: radial-gradient(#F8F7F9,white);
+}
+
+.main-content{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.box-1{
+    font-size: 1rem;
+    text-align: left;
+    line-height: 2;
+}
+
+.glass-card {
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);  /* Semi-transparent background */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);  /* Soft shadow */
+    backdrop-filter: blur(10px);  /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(10px);  /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.18);  /* Light border */
+    color: black;
+    background-color: #e4dbee;
+}
+
+.glass-card ul{
+    line-height: 2;
+    margin-left: 50px;
+}
+
+.shopcards{
+    margin-top: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    width: 100vw;
+}
+
+.shopcards a{
+    text-decoration: none;
+}
+
+.card{
+    margin-bottom: 20px;
+    background-color: #e4dbee;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);  /* Soft shadow */
+    border-radius: 10px;
+    height: 680px;
+    width: 300px;
+    backdrop-filter: blur(10px);  /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(10px);  /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.18);  /* Light border */
+}
+
+.card:hover{
+    cursor: pointer;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+    transform: translateY(-5.5px);
+}
+
+.card:active{
+    cursor: pointer;
+    transform: scale(0.95);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card-img{
+    margin-left: 16px;
+    margin-top: 4px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 320px;
+    width: 90%;
+}
+
+.card-caption{
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-left: 25px;
+    margin-right: 15px;
+}
+
+.card-description{
+    margin-top: 5px;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-left: 25px;
+    margin-right: 20px;
+}
+
+.card a{
+    font-size: 0.8rem;
+    line-height: 1.6;
+    margin-left: 13px;
+    text-decoration: none;
+}
+
+.price{
+    text-align: start;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.card-caption:hover, .price:hover{
+    cursor: pointer;
+}
+
+.img1{
+    margin-top: -20px;
+    background-image: url("https://cdn.glitch.global/fea2d6fb-a667-4147-9cb1-11f61d126060/Art hoe.jpg?v=1683901839961");
+}
+
+.img2{
+    margin-top: -4px;
+    background-image: url("https://cdn.glitch.global/fea2d6fb-a667-4147-9cb1-11f61d126060/softcore.jfif?v=1683901827821");
+    margin-bottom: 20px;
+    
+}
+
+.img3{
+    margin-bottom: 30px;
+    background-image: url("https://cdn.glitch.global/fea2d6fb-a667-4147-9cb1-11f61d126060/Dark academia.jpg?v=1683901831932");
+}
+
+.img4{
+    margin-top: -20px;
+    margin-bottom: 10px;
+    background-image: url("https://cdn.glitch.global/fea2d6fb-a667-4147-9cb1-11f61d126060/anime.jpg?v=1683904873948");
+}
+
+.img5{
+    margin-top: -2px;
+    margin-bottom: 20px;
+    background-image: url("https://cdn.glitch.global/fea2d6fb-a667-4147-9cb1-11f61d126060/lavender.jpeg?v=1683904872192");
+}
+
+/* main end */
+
+/* footer start */
+
+footer{
+    
+    color: black;
+    position: absolute;
+    bottom: 100;
+    left: 0;
+    width: 100vw;
+    background-color: #818AA3;
+}
+
+.footlinks p{
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+footer ul{
+    display: flex;
+    gap: 80px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 40px;
+    list-style-type:none ;
+    font-size: 1rem;
+    
+}
+
+.footlinks{
+    margin-bottom: 40px;
+}
+
+.copyright{
+    line-height: 2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    text-align: end;
+    font-size: 0.8rem;
+}
+
+/* footer end */

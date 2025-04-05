@@ -1,0 +1,208 @@
+/* ----------- Tablet & Mobile (768px and below) ----------- */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .navlinks {
+        position: absolute;
+        display: none;
+        top: 4rem;
+        right: 4rem;
+        width: 40%;
+        background-color: var(--nav-color);
+        text-align: center;
+        flex-direction: column;
+        border: 0.3rem solid #092327;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navlinks.active {
+        display: flex;
+    }
+
+    .navlinks ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.1rem;
+    }
+
+    .navlinks ul li {
+        gap: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bars, #search, .search-icon {
+        display: none;
+    }
+
+    .searchbar {
+        width: 90%;
+    }
+
+    .searchbar::before {
+        content: "Search";
+    }
+
+    .searchbar:hover {
+        border: none;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .banner {
+        height: auto;
+        padding: 10rem 1rem 4rem;
+        text-align: center;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+
+    .content {
+        font-size: 1.2rem;
+        width: 90%;
+    }
+
+    .box{
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .polaroid-img,
+    .description,
+    .types-img,
+    .types .description {
+        width: 100%;
+        height: max-content;
+    }
+
+    .types {
+        flex-direction: column-reverse;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .types-img{
+        height: 20rem;
+        width: 100%;
+    }
+    
+    .explore, .cta-button{
+        padding: 0.8rem 1rem;
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    .cta-content{
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .cta-buttons {
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    footer {
+        padding-top: 1rem;
+        gap: 3rem;
+        height: auto;
+    }
+
+    footer .description{
+        width: 100%;
+        text-align: left;
+        padding-left: 2rem;
+    }
+
+    footer .description-content ul {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .copyright {
+        padding-right: 1rem;
+        text-align: end;
+    }
+
+    .about-us{
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+
+    .polaroid-img{
+        height: 20rem;
+    }
+
+    footer .description .description-heading, .types .description-heading, .box1-heading, .description-content, .cta-content .description-heading{
+        font-size: 1.6rem;
+    }
+
+    footer .description .description-content, .types .description-content, .box1-content, .description-content, .cta-content  .description-content{
+        font-size: 0.8rem;
+    }
+}
+
+/* ----------- Mobile (480px and below) ----------- */
+@media screen and (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .searchbar {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 0.5rem;
+    }
+
+    #search {
+        width: 90%;
+    }
+
+    .bars,
+    .search-icon {
+        width: 90%;
+        border-radius: 1rem;
+    }
+
+    .heading {
+        font-size: 2.2rem;
+    }
+
+    .content {
+        font-size: 1rem;
+    }
+
+    .description-heading {
+        font-size: 1.5rem;
+    }
+
+    .description-content {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        width: 100%;
+    }
+
+    footer .description-heading {
+        font-size: 1.4rem;
+    }
+
+    footer .description-content {
+        font-size: 1rem;
+    }
+}

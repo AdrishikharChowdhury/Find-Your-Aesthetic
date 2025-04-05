@@ -132,7 +132,6 @@ nav ul li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("../images/banner.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -143,6 +142,10 @@ nav ul li{
     padding-top: 8rem;
     position: relative;
     overflow: hidden; /* ensures ::before doesn't overflow */
+}
+
+#img1{
+    background-image: url("../images/banner.jpg");
 }
 
 .banner::before {

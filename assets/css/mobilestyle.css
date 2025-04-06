@@ -74,7 +74,7 @@
         width: 90%;
     }
 
-    .box{
+    .box {
         flex-direction: column;
         height: max-content;
     }
@@ -93,18 +93,19 @@
         padding: 1rem;
     }
 
-    .types-img{
+    .types-img {
         height: 20rem;
         width: 100%;
     }
-    
-    .explore, .cta-button{
+
+    .explore,
+    .cta-button {
         padding: 0.8rem 1rem;
         font-size: 0.8rem;
         width: 100%;
     }
 
-    .cta-content{
+    .cta-content {
         gap: 2rem;
         padding: 2rem;
     }
@@ -120,7 +121,7 @@
         height: auto;
     }
 
-    footer .description{
+    footer .description {
         width: 100%;
         text-align: left;
         padding-left: 2rem;
@@ -136,20 +137,28 @@
         text-align: end;
     }
 
-    .about-us{
+    .about-us {
         flex-direction: column-reverse;
         gap: 1rem;
     }
 
-    .polaroid-img{
+    .polaroid-img {
         height: 20rem;
     }
 
-    footer .description .description-heading, .types .description-heading, .box1-heading, .description-content, .cta-content .description-heading{
+    footer .description .description-heading,
+    .types .description-heading,
+    .box1-heading,
+    .description-content,
+    .cta-content .description-heading {
         font-size: 1.6rem;
     }
 
-    footer .description .description-content, .types .description-content, .box1-content, .description-content, .cta-content  .description-content{
+    footer .description .description-content,
+    .types .description-content,
+    .box1-content,
+    .description-content,
+    .cta-content .description-content {
         font-size: 0.8rem;
     }
 }
@@ -157,7 +166,6 @@
 /* ----------- Mobile (480px and below) ----------- */
 @media screen and (max-width: 480px) {
     nav {
-        flex-direction: column;
         gap: 0.5rem;
     }
 
@@ -205,4 +213,48 @@
     footer .description-content {
         font-size: 1rem;
     }
+
 }
+
+@media screen and (max-width: 768px) {
+    .shop {
+      justify-content: center;
+      gap: 1rem;
+      padding: 0.5rem;
+    }
+  
+    .card {
+      width: 9rem;
+      height: 19rem;
+    }
+  
+    .card-pic {
+      height: 90%;
+    }
+  
+    .card-text {
+      font-size: 0.7rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .shop {
+        justify-content: center;
+        gap: 1rem;
+        padding: 0.5rem;
+      }
+    
+    .card {
+        width: 12rem;
+        height: 19rem;
+      }
+    
+      .card-pic {
+        height: 90%;
+      }
+    
+      .card-text {
+        font-size: 0.7rem;
+      }
+  }
+  

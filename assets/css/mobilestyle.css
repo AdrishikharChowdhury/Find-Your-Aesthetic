@@ -226,6 +226,7 @@
     .card {
       width: 9rem;
       height: 19rem;
+      gap: 1rem;
     }
   
     .card-pic {
@@ -247,6 +248,7 @@
     .card {
         width: 12rem;
         height: 19rem;
+        gap: 1rem;
       }
     
       .card-pic {
